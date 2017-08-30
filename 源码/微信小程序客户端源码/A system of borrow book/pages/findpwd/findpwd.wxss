@@ -1,0 +1,60 @@
+.container{
+  height: 530rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+    justify-content: space-around;
+}
+.item1,.item2{
+  width: 100%;
+  height: 98rpx;
+  display: flex;
+  align-items: center;
+}
+
+.item1-input{
+  border: 4rpx solid #bbbbbb;
+  height: 90rpx;
+  width: 470rpx;
+  border-radius: 10rpx;
+  margin-left:20rpx; 
+}
+.item1-text,.item2-text{
+margin-left: 80rpx;
+font-size: 32rpx;
+font-family: "微软雅黑"
+}
+.item2-input{
+   border: 4rpx solid #bbbbbb;
+  height: 90rpx;
+  width: 202rpx;
+  border-radius: 10rpx;
+  margin-left:20rpx; 
+}
+.item2-btn{
+  width: 248rpx;
+  height: 90rpx;
+  margin-left: 20rpx;
+  line-height: 90rpx;
+  background: #ffffff;
+  border: 2rpx dashed #bbbbbb;
+  border-radius: 10rpx;
+  font-size: 34rpx;
+}
+.item3-btn{
+  width: 644rpx;
+  height: 90rpx;
+  background-color:#7cb342;
+  color: #ffffff;
+  line-height: 90rpx;
+  border: 2rpx dashed #7cb342;
+
+}
+
+.on{
+  border-color: red;
+  background-color: palevioletred;
+}
+input{
+  padding-left: 10rpx;
+}

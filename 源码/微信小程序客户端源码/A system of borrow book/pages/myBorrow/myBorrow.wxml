@@ -1,0 +1,23 @@
+<checkbox-group bindchange="checkboxChange">
+  <scroll-view scroll-y style="height:1050rpx;  ">
+    <block wx:for="{{readyBorrow}}" wx:for-item="bookitem" wx:key="bookId">
+      <view class="item">
+        <image src="https://www.kyssky.party:8443/weixin/{{bookitem.bookurl}}"  data-isbn="{{bookitem.isbn}}" data-id="{{bookitem.id}}" bindtap="goBookSimple" bindtouchstart="mytouchstart"  bindtouchend="mytouchend"  ></image>
+        <text>{{bookitem.isbn}}{{bookitem.id}}</text>
+        <checkbox value="{{bookitem.isbn}}{{bookitem.id}}" name="bookId" class="checkbox" id="{{bookitem.bookisbn}}" />
+      </view>
+    </block>
+  </scroll-view>
+</checkbox-group>
+
+<view class="tips" style="display:{{display}}">
+  <text>您的借书栏为空</text>
+</view>
+<view class="warn">
+  <text> 一次最多借2本</text>
+  <view >
+  <text> 长按可删除 </text>
+  </view>
+  
+  <button class="bottomBtn" type="primary" bindtap="createQrCode" disabled= "{{disabled}}" >生成我的借书二维码</button>
+</view>

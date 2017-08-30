@@ -1,0 +1,12 @@
+<!--bindemail.wxml-->
+  <view class="container">
+  <view class="item">
+   <text class="container-text">邮箱</text>
+   <input placeholder="请输入邮箱" class="container-input" bindinput="input_email"/>
+   <button class="container-btn" bindtap="getcode" disabled="{{flag}}">{{btntext}}</button>
+  </view>
+  
+  
+  
+  
+  </view>

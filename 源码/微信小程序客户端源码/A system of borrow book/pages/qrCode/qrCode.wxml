@@ -1,0 +1,4 @@
+<image id="img" src="{{src}}"></image>
+<view class="vi">
+<text>在管理员未核对完信息之前，请勿关闭此页面</text>
+</view>

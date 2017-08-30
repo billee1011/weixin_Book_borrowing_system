@@ -1,0 +1,63 @@
+/* loginbyweixinafter.wxss */
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item1{
+  width:100%;
+  height: 186rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.item1-text1{
+font-family: "微软雅黑";
+font-size: 30rpx;
+}
+.item1-text2{
+font-family: "微软雅黑";
+font-size: 28rpx;
+color: #827d82;
+}
+.item2{
+  width: 80%;
+  height:134rpx; 
+  border-bottom: 2rpx solid #827d82;
+}
+.btn1{
+  width:150rpx ;
+  height: 70rpx;
+  margin-left: 0;
+  line-height: 70rpx;
+  padding: 0;
+  background-color:#7cb342; 
+ margin-top: 20rpx;
+}
+.item3{
+  width:80%;
+  height: 170rpx;
+  display: flex;
+  align-items: center;
+   border-bottom: 2rpx solid #827d82;
+}
+.btn2{
+  margin-left: 20rpx;
+  padding-left:10rpx;
+  padding-right: 10rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  background-color: #fff; 
+
+}
+.btn2::after{
+ 
+  border:0;
+  border-bottom:2rpx solid #827d82; 
+  border-radius:0;
+
+}

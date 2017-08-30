@@ -1,0 +1,39 @@
+<!--pages/Reservation_list/Reservation_list.wxml-->
+<!--预定列表-->
+<view class="page">
+  <block wx:for="{{books}}" wx:for-item="bookitem" wx:key="bookId">
+    <view class="section">
+      <view class="s-fl">
+        <image src="https://www.kyssky.party:8443/weixin/{{bookitem.bookurl}}" bindtap="goBookSimple" data-isbn="{{bookitem.isbn}}" data-id="{{bookitem.id}}"></image>
+      </view>
+      <view class="s-fr">
+        <text>{{bookitem.bookname}}</text>
+        <text>{{bookitem.collectionplace}}</text>
+        <text>图书编号：{{bookitem.isbn}}{{bookitem.id}}</text>
+        <text>预定到期时间:{{bookitem.date}}</text>
+            <button class="goBorrow iconfont icon-iconfontzhizuobiaozhun47" data-isbn="{{bookitem.isbn}}" data-id="{{bookitem.id}}" data-src="{{bookitem.bookurl}}" data-author="{{bookitem.author}}" data-name="{{bookitem.bookname}}" bindtap="goBorrow" >{{goBorrowTxt}}</button>
+
+        <button class="cancelBtn" bindtap="cancel" data-isbn="{{bookitem.isbn}}" data-id="{{bookitem.id}}" >{{cancelTxt}}</button>
+
+
+      </view>
+    </view>
+
+  </block>
+  <view class="tips" style="display:{{display}}">
+    <text>您目前没有预定书籍</text>
+  </view>
+
+
+
+  <!--以下为toast显示的内容-->
+  <view class="toast_content_box" style="display: {{toastDisplay}}">
+    <view class="toast_content">
+      <view class="toast_content_text">
+        {{toastText}}
+      </view>
+    </view>
+  </view>
+
+
+</view>

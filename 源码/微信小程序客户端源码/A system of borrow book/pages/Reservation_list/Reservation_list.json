@@ -1,0 +1,5 @@
+{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "预定列表",
+    "enablePullDownRefresh" : true
+}

@@ -1,0 +1,67 @@
+{
+  "pages": [
+    
+    "pages/firstpage/firstpage",
+    "pages/pay/pay",
+    "pages/borrowHistory/borrowHistory",
+  
+    "pages/booksimple/booksimple",
+    "pages/accountlogin/accountlogin",
+    "pages/my/my",
+    "pages/bookinfo/bookinfo",
+    "pages/willReservation/willReservation",
+    "pages/searchlist/searchlist",
+    "pages/checkemail/checkemail",
+    "pages/bindemail/bindemail",
+    "pages/register/register",
+    "pages/loginbyweixinafter/loginbyweixinafter",
+    "pages/bindaccount/bindaccount",
+    "pages/findpwd/findpwd",
+    "pages/setting/setting",
+    "pages/setpwd/setpwd",
+    "pages/repayBook/repayBook",
+    "pages/Reservation_list/Reservation_list",
+    "pages/second_class/second_class",
+    "pages/all/all",
+    "pages/qrCode/qrCode",
+    "pages/myBorrow/myBorrow"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#7cb342",
+    "navigationBarTitleText": "百书馆",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#7cb342",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/firstpage/firstpage",
+        "iconPath": "images/icon_index2.png",
+        "selectedIconPath": "images/icon_index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/all/all",
+        "iconPath": "images/icon_index4.png",
+        "selectedIconPath": "images/icon_index3.png",
+        "text": "类别"
+      },
+      {
+        "pagePath": "pages/myBorrow/myBorrow",
+        "iconPath": "images/icon_index6.png",
+        "selectedIconPath": "images/icon_index5.png",
+        "text": "借书栏"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/icon_index8.png",
+        "selectedIconPath": "images/icon_index7.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

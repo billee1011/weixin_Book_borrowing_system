@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/phone" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="205dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:drawableBottom="@drawable/line"
+                android:hint="手机号"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:textColor="#888"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="145dp"
+                android:layout_height="41dp" 
+                android:hint="输入验证码"
+                    android:paddingLeft="5dp"
+                     android:phoneNumber="true"
+                 android:layout_alignParentBottom="true"
+                   android:background="@drawable/inputbg"
+                   android:textColor="#888"
+                   android:singleLine="true"
+                />
+            <Button 
+                android:id="@+id/btn_code"
+                android:layout_width="100dp"
+                android:layout_height="41dp"
+                android:text="获取验证码"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentRight="true"
+                  android:background="@drawable/btn_selector"
+                 android:textColor="@drawable/btn_textcolor"
+                 
+                    
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+        <Button 
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="下一步"
+            android:layout_gravity="bottom"
+             android:background="@drawable/btn_selector"
+                 android:textColor="@drawable/btn_textcolor"
+            />
+    </LinearLayout>
+
+</LinearLayout>

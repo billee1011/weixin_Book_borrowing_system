@@ -1,0 +1,33 @@
+<!--pages/willReservation/willReservation.wxml-->
+<!--我要预定-->
+<view id="container">
+    <view class="img">
+        <image src="{{src}}"></image>
+    </view>
+    <view class="book-name">
+        <text>{{bookName}}</text>
+    </view>
+    <view class="author">
+        <text>{{author}}</text>
+    </view>
+    <view class="book-id">
+       <text>编号:</text> <text>{{isbn}}{{bookId}}</text>
+    </view>
+
+    <view class="addbtn">
+    <icon type="{{type}}" />
+      
+        {{sucTxt}}
+    </view>
+
+    <navigator url="{{url}}" open-type="{{openType}}" >
+    
+     <button type="primary" size="mini" style="background:{{background}}" >{{btnTxt}}</button>
+    </navigator>
+
+
+    <view class="rese-data">
+    <text> 说明：{{explain}}</text>
+    </view>
+</view>
+

@@ -1,0 +1,51 @@
+<!--setting.wxml-->
+<view class="container" wx:if="{{flag5}}"></view>
+<view class="container" wx:if="{{flag0}}">
+  <view class="item1">
+    <view class="item1-view">
+      <text class="item1-text1">接收提醒\n</text>
+      <text class="item1-text2">提醒内容包括取书提醒，还书提醒</text>
+    </view>
+    <switch type="switch" checked="{{flag1}}" bindchange="switch1Change"/>
+  </view>
+  <view class="item2">
+    <text class="item1-text1">推荐书籍</text>
+    <switch type="switch" checked="{{flag2}}" bindchange="switch2Change" />
+  </view>
+  <view class="item3" wx:if="{{flag2}}">
+    <view class="item3-header">
+      <text class="item3-text">推荐频率</text>
+      <view class="item3-triangle {{flag3==false ? 'on' : ''}}" bindtap="changitem3body"></view>
+    </view>
+
+    <view class="item3-body" wx:if="{{flag3}}">
+      <radio-group class="item3-radio" bindchange="radioChange">
+        <view class="item3-radio1">
+          <radio value="week" checked="{{flag4}}" />一周一次</view>
+
+        <view class="item3-radio1">
+          <radio value="month" />
+          <text>一月一次</text>
+        </view>
+
+
+      </radio-group>
+
+
+
+
+
+    </view>
+
+
+
+
+  </view>
+</view>
+<view class="extra" wx:if="{{flag6}}" bindtap="loading">
+
+<image src="../../images/nofound.png" class="extra-image">
+</image>
+<view class="extra-text">页面找不到了。。。</view>
+
+</view>

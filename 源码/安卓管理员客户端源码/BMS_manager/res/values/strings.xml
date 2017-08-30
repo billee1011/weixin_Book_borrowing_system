@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BMS_manager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_register_two">RegisterTwo</string>
+    <string name="title_activity_register_three">RegisterThree</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_forget_pwd">ForgetPWDActivity</string>
+    <string name="title_activity_re_set_pwd">ReSetPwd</string>
+    <string name="title_activtiy_capture">Capture</string>
+    <string name="title_activity_result1">Result1</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_result_activity2">ResultActivity2</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_record">RecordActivity</string>
+
+</resources>

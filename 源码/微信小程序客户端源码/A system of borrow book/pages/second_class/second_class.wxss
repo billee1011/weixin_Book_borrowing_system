@@ -1,0 +1,48 @@
+/* pages/second_class/second_class.wxss */
+.navis{
+ padding: 20rpx 60rpx;
+ margin-bottom: 30rpx;
+}
+.navis text{
+  font-size: 34rpx;
+  color: #666;
+  display: inline-block;
+  padding: 0 20rpx;
+  margin-bottom: 25rpx;
+}
+.on{
+  color: darkorange;
+}
+.section{
+    width: 700rpx;
+    margin: 20rpx auto 0;
+    padding: 0;
+   
+}
+.header{ text-align: center;
+font-size: 32rpx; color: orangered;
+}
+
+.section-item{
+  width: 665rpx; height: 320rpx;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 16rpx;
+  margin: 50rpx auto;
+  background: #ffffff;
+}
+image{ width: 250rpx; height: 250rpx; float: left;}
+.section-item text{
+  margin-left: 280rpx;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  display: block;
+  color: #666;
+}
+ .section-item text:nth-child(2){
+  color: #101010;
+}
+.navigator-hover{
+  color: red;
+}
+
+

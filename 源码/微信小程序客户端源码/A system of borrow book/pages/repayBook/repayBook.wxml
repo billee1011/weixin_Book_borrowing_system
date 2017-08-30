@@ -1,0 +1,24 @@
+<checkbox-group bindchange="checkboxChange">
+  <scroll-view scroll-y style="height:1050rpx;  ">
+    <block wx:for="{{repayBooks}}" wx:key="index">
+      <view class="bookitem">
+        <checkbox value="{{item.isbn}}{{item.id}}" name="bookId" />
+        <image src="https://www.kyssky.party:8443/weixin/{{item.bookurl}}" data-id="{{item.id}}"  data-isbn="{{item.isbn}}" bindtap="gotoInfo"  ></image>
+        <view>
+        <text>编号:{{item.isbn}}{{item.id}}</text>
+          <text>{{item.bookname}}</text>
+          <text>到期时间:{{item.date}}</text>
+         
+            <button data-id="{{item.id}}"  data-isbn="{{item.isbn}}"  data-src= "{{item.bookurl}}" data-bookName="{{item.bookname}}"  bindtap="borrowAgainBtn" >续借</button>
+         
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</checkbox-group>
+<view class="tips" style="display:{{display}}">
+  <text>您没有要还的书</text>
+</view>
+<view class="warn">
+  <button class="bottomBtn" type="primary" bindtap="createRepayQrCode" disabled = "{{disabled}}" > 生成我的还书二维码</button>
+</view>

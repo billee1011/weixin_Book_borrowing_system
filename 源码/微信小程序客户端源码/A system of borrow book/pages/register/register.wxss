@@ -1,0 +1,99 @@
+.container {
+  height: 960rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  height: 90rpx;
+  line-height: 90rpx;
+  margin-left: 30rpx;
+  border-radius: 10rpx;
+  border: 4rpx solid #bbb;
+  padding-left: 10rpx;
+}
+
+.input1 {
+  width: 470rpx;
+}
+
+.input2 {
+  width: 202rpx;
+  position: relative;
+}
+
+.input3 {
+  width: 246rpx;
+  position: relative;
+}
+
+.text1 {
+  font-size: 32rpx;
+  color: #101010;
+  font-family: "微软雅黑";
+  margin-left: 100rpx;
+}
+
+.text2 {
+  font-size: 32rpx;
+  color: #101010;
+  font-family: "微软雅黑";
+  margin-left: 64rpx;
+}
+
+.item1 {
+  width: 100%;
+  height: 98rpx;
+  display: flex;
+  margin-top: 60rpx;
+  align-items: center;
+}
+
+.item2 {
+  width: 100%;
+  height: 98rpx;
+  display: flex;
+  align-items: center;
+}
+
+.btn1 {
+  margin-left: 20rpx;
+  width: 248rpx;
+  height: 90rpx;
+  position: relative;
+  line-height: 90rpx;
+  font-size: 34rpx;
+  background: #fff;
+  border: 2rpx dashed #bbb;
+  color: #555;
+}
+
+.btn2 {
+  width: 644rpx;
+  height: 90rpx;
+  background-color: #7cb342;
+  color: white;
+  line-height: 90rpx;
+}
+
+.hinttext {
+  font-size: 26rpx;
+  color: red;
+}
+
+.item3 {
+  display: flex;
+  align-items: center;
+}
+
+icon {
+  height: 46rpx;
+  width: 46rpx;
+  margin-left: 220rpx;
+}
+
+.item4 {
+  height: 46rpx;
+  width: 100%;
+}

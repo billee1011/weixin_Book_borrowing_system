@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background2">
+        <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center_horizontal"
+        >
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+             
+             <TextView 
+                 android:text="员工注册码:"
+                  android:layout_width="85dp"
+                  android:layout_height="46dp"
+                  android:textColor="#abaeb9"
+                 android:textSize="16sp"
+                  android:layout_alignParentBottom="true"
+                  android:gravity="bottom"
+                 />
+            <EditText 
+                android:id="@+id/et_registercode"
+                android:layout_width="150dp"
+                android:layout_height="46dp"
+                android:background="@null"
+                android:drawableBottom="@drawable/line"
+                android:layout_alignParentRight="true"
+                  android:layout_alignParentBottom="true"
+                  android:textColor="#fff"
+                  android:phoneNumber="true"
+                />       
+         </RelativeLayout>
+            
+            
+            
+        </LinearLayout>
+          <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        >
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+             
+             <TextView 
+                 android:text="员工姓名:"
+                  android:layout_width="85dp"
+                  android:layout_height="46dp"
+                  android:textColor="#abaeb9"
+                 android:textSize="16sp"
+                  android:layout_alignParentBottom="true"
+                  android:gravity="bottom"
+                 />
+            <EditText 
+                android:id="@+id/et_name"
+                android:layout_width="150dp"
+                android:layout_height="46dp"
+                android:background="@null"
+                android:drawableBottom="@drawable/line"
+                android:layout_alignParentRight="true"
+                  android:layout_alignParentBottom="true"
+                    android:textColor="#fff"
+                />       
+         </RelativeLayout>
+            
+            
+            
+        </LinearLayout>
+         <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+        <Button 
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="下一步"
+            android:layout_gravity="bottom"
+             android:background="@drawable/btn_selector"
+                 android:textColor="@drawable/btn_textcolor"
+            />
+    </LinearLayout>
+
+</LinearLayout>

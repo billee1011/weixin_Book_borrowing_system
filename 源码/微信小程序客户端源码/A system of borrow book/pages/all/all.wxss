@@ -1,0 +1,28 @@
+/* pages/all/all.wxss */
+.box{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 20rpx auto;
+  justify-content: space-between;
+}
+.item{
+  height: 88rpx;
+  padding: 0 20rpx;
+  margin-bottom: 70rpx;
+  text-align: center;
+}
+image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 10rpx;
+}
+.item text{
+  display: block;
+  font-size: 26rpx;
+  color:#101010 ;
+  /*font-style: italic;*/
+  width: 120rpx;
+  text-align: center;
+}

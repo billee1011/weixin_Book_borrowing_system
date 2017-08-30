@@ -1,0 +1,91 @@
+<!--bookinfo.wxml-->
+<view class="All" wx:if="{{onload1}}">
+  <scroll-view class="container" scroll-y="true">
+    <view class="container-view">
+      <view class="item-book">
+        <image src="https://www.kyssky.party:8443/weixin/{{book.bookurl}}" class="item-book-image"></image>
+        <view class="item-book-view">
+          <text class="text-bookname">{{book.bookname}}</text>
+          <text class="text-author">{{book.author}}</text>
+          <text class="text-cn">藏书量：{{book.collectionnumber}}</text>
+          <text class="text-cn">可借复本：{{book.counterpart}}</text>
+        </view>
+      </view>
+      <view class="booktable">
+        <view class="booktable-item">
+          <text class="booktable-item-text1">书名</text>
+          <text class="booktable-item-text2">{{book.bookname}}</text>
+        </view>
+        <view class="booktable-item extra">
+          <text class="booktable-item-text1">出版社</text>
+          <text class="booktable-item-text2">{{book. press}}</text>
+        </view>
+        <view class="booktable-item extra">
+          <text class="booktable-item-text1">ISBN</text>
+          <text class="booktable-item-text2">{{book.isbn}}</text>
+        </view>
+        <view class="booktable-item extra">
+          <text class="booktable-item-text1">索书号</text>
+          <text class="booktable-item-text2">{{book.callnumber}}</text>
+        </view>
+        <view class="booktable-item extra">
+          <text class="booktable-item-text1">藏书地</text>
+          <text class="booktable-item-text2">{{book.collectionplace}}</text>
+        </view>
+      </view>
+      <block wx:for="{{book.bookcontentinfo}}" wx:key="index" >
+        <view class="bookinfo">
+          <view class="title">
+            <view class="title-item1">
+            </view>
+            <view class="title-item2">
+              <text class="title-item2-text">{{item.title}}</text>
+            </view>
+            <view class="title-item3">
+            </view>
+          </view>
+          <view class="content">
+            <text class="content-text">{{item.content}}</text>
+          </view>
+        </view>
+      </block>
+      <view class="recommend-title">
+        <view class="line"></view>
+        <!--<text class=" icon-xuexilanzi iconfont"></text>-->
+        <text class="recommend-title-text">
+          推荐
+        </text>
+        <view class="line"></view>
+      </view>
+      <block wx:for="{{recommend_book}}" wx:key="isbn">
+        <view class="item-book" bindtap="reonload" id="{{item.isbn}}">
+          <image src="https://www.kyssky.party:8443/weixin/{{item.bookurl}}" class="item-book-image"></image>
+          <view class="item-book-view">
+            <text class="text-bookname">{{item.bookname}}</text>
+            <text class="text-author">{{item.author}}</text>
+            <text class="text-cn">藏书量：{{item.collectionnumber}}</text>
+            <text class="text-cn">可借复本：{{item.counterpart}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  <view class="footer">
+    <view class="footer-item1" bindtap="goReservation" >
+      <button class="btn1 ">
+        我要预定
+        <text class="iconfont icon-star-outline"></text>
+      </button>
+    </view>
+
+    <view class="footer-item2" bindtap="goBorrow" >
+      <button class="btn2">加入借书栏
+        <text class="iconfont icon-duihao"></text>
+      </button>
+    </view>
+  </view>
+</view>
+<view class="exception" wx:if="{{onload2}}" bindtap="loading">
+  <image src="../../images/nofound.png" class="extra-image"></image>
+  <view class="extra-text">页面找不到了。。。</view>
+</view>

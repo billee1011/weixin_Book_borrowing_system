@@ -1,0 +1,10 @@
+.myToast{
+  width: 200rpx;
+  height: 150rpx;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6rpx;
+  text-align: center;
+}
+.myToast text{
+  color: #ffffff;
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_pwd"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/pass" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="205dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:drawableBottom="@drawable/line"
+                android:hint="设置密码"
+                 android:password="true"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ=+-_/*.,;/\"
+                android:singleLine="true"
+                android:textColor="#888"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_pwdtrue"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/pass" />
+
+            <EditText
+                android:id="@+id/et_pwdtrue"
+                android:layout_width="205dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:drawableBottom="@drawable/line"
+                android:password="true"
+                android:hint="确认密码"
+                 android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ=+-_/*.,;/\"
+                android:singleLine="true"
+                android:textColor="#888"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/btn_selector"
+            android:text="完成注册"
+            android:textColor="@drawable/btn_textcolor" />
+    </LinearLayout>
+
+</LinearLayout>

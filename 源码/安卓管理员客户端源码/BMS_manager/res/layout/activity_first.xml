@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="290dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/tv_employnum"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:text="管理员编号：0001"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_mymanage"
+            android:layout_width="91dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:drawableRight="@drawable/dayuhaoslt"
+            android:text="我的管理"
+            android:textColor="@drawable/btn_textcolor"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <RelativeLayout 
+        
+        android:layout_width="290dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+          
+        
+        >
+        
+        
+        <Button 
+            android:id="@+id/btn_borrowbook"
+            android:layout_width="132dp"
+            android:layout_height="45dp"
+              android:background="@drawable/btn_selector"
+            android:text="借书" 
+            android:textColor="@drawable/btn_textcolor"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        
+        >
+        <TextView 
+            android:layout_centerHorizontal="true"
+            android:layout_width="220dp"
+            android:drawableBottom="@drawable/line"
+            android:layout_height="15dp"
+            
+            />
+        
+        
+    </RelativeLayout>
+     <RelativeLayout 
+        
+        android:layout_width="290dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+          
+        
+        >
+        
+        
+        <Button 
+            android:id="@+id/btn_returnbook"
+            android:layout_width="132dp"
+            android:layout_height="45dp"
+              android:background="@drawable/btn_selector"
+            android:text="还书" 
+            android:textColor="@drawable/btn_textcolor"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

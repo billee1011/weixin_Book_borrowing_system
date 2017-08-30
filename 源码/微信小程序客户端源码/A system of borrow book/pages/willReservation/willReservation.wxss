@@ -1,0 +1,42 @@
+/* pages/willReservation/willReservation.wxss */
+#container{
+    width: 700rpx;
+    margin: 0 auto;
+    text-align: center;
+}
+.img{
+  margin: 52rpx auto 60rpx;
+}
+image{
+    width: 240rpx;
+    height: 240rpx;
+  
+}
+text{
+    font-size: 32rpx;
+  
+}
+.book-name{
+   color: #333333;
+   height: 150rpx;
+   width: 280rpx;
+   margin: 0 auto;
+   text-align: left;
+   
+}
+.author,.book-id,.rese-data{
+  font-size: 28rpx;
+  color: #666666;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.addbtn{
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+}
+
+.icon-iconfontxinzeng:before{
+  content: '\e602';
+  color: red;
+  font-size: 90rpx;
+}

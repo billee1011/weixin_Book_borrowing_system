@@ -1,0 +1,21 @@
+<!--pages/borrowHistory/borrowHistory.wxml-->
+<view class="container"  wx:if="{{flag}}" >
+  <view class="header">
+    <text>借书时间</text>
+    <text>还书时间</text>
+    <text>馆藏地</text>
+  </view>
+  <block class="table" wx:for="{{borrowHistory}}" wx:key="{{index}}">
+    <view class="item">
+     
+
+      <image src="https://www.kyssky.party:8443/weixin/{{item.bookurl}}"></image>
+      <text >{{item.date}}</text>
+      <text >{{item.date2}}</text>
+      <text >逸夫图书馆3楼</text>
+    </view>
+  </block>
+  <view class="tips"  style="display:{{display}}" >
+  <text>您的借阅历史为空</text>
+  </view>
+</view>

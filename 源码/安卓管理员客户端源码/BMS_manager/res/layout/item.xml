@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+     >
+   
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="借书日期"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+        <TextView
+               android:layout_weight="1"
+            android:id="@+id/tv_userid"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+         android:gravity="left|center_vertical"
+            android:text="借书人ID"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+ <!-- android:textColor="#fff" -->
+<!--   android:gravity="right|center_vertical" -->
+        <TextView
+            android:paddingRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_bookid"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:textColor="#fff"
+            android:text="TCpIDdsasdsadasdasdasdas"
+            android:textSize="15sp" />
+
+</LinearLayout>
+</LinearLayout>

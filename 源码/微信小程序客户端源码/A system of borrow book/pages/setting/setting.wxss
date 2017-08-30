@@ -1,0 +1,117 @@
+/* setting.wxss */
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item1 {
+  margin-top: 130rpx;
+  width: 80%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item1-view {
+  width: 80%;
+  height: 100%；;
+}
+
+.item1-text1 {
+  font-family: "微软雅黑";
+  font-size: 36rpx;
+}
+
+.item1-text2 {
+  font-family: "微软雅黑";
+  font-size: 26rpx;
+  color: #c2c0c2;
+}
+
+.item2 {
+  margin-top: 40rpx;
+  width: 80%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item3 {
+  width: 80%;
+  height: 350rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item3-header {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item3-triangle {
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 26rpx;
+  border-color: #333 transparent transparent transparent;
+  margin-top: 26rpx;
+  margin-right: 40rpx;
+}
+.on{
+  border-color: transparent transparent transparent #333;
+  margin-right:27rpx;
+  margin-top:0rpx;
+}
+.item3-text {
+  font-family: "微软雅黑";
+  font-size: 36rpx;
+}
+
+.item3-body {
+  width: 90%;
+  height: 200rpx;
+  border: 2rpx solid #c2c0c2;
+  border-radius: 20rpx;
+}
+
+.item3-radio {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.item3-radio1 {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.extra{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.extra-image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.extra-text{
+  margin-left:20rpx; 
+  font-family: "微软雅黑";
+  font-size: 40rpx;
+}

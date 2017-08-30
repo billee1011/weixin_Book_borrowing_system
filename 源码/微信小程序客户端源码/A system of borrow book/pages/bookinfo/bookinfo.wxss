@@ -1,0 +1,263 @@
+/* bookinfo.wxss */
+
+.iconfont {
+  font-family: 'iconfont';
+  font-size: 40rpx;
+  margin-left: 10rpx;
+}
+
+.icon-star-outline:before {
+  color: #fff;
+  content: "\e634";
+}
+
+.icon-duihao:before {
+    color: #fff;
+  content: "\e61f";
+}
+.icon-xuexilanzi:before{
+  content: "\e64b";
+  font-size: 40rpx;
+  color: #888;
+
+}
+.All{
+   width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 90%;
+}
+
+.container-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-book {
+  width: 630rpx;
+  height: 300rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-book-view {
+  width: 240rpx;
+  height: 240rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-bookname {
+  font-size: 35rpx;
+  font-family: "微软雅黑";
+  color: #101010;
+}
+
+.text-author {
+  font-size: 30rpx;
+  font-family: "微软雅黑";
+  color: #888;
+}
+
+.text-press {
+  font-size: 30rpx;
+  font-family: "微软雅黑";
+  color: #888;
+}
+
+.text-cn {
+  font-size: 28rpx;
+  font-family: "微软雅黑";
+  color: #101010;
+}
+
+.item-book-image {
+  width: 180rpx;
+  height: 240rpx;
+}
+
+.booktable {
+  width: 620rpx;
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.booktable-item {
+  width: 100%;
+  min-height: 72rpx;
+  display: flex;
+  border: 4rpx solid #cccccc;
+}
+
+.booktable-item-text1 {
+  width: 38.2%;
+  height: auto;
+  border-right: 4rpx solid #cccccc;
+  text-align: right;
+  line-height:200%;
+  padding-right: 10rpx;
+}
+
+.booktable-item-text2 {
+  width: 61.8%;
+  height: auto;
+  line-height:200%;
+  padding-left: 10rpx;
+}
+
+.extra {
+  border-top: 0rpx;
+}
+
+.bookinfo {
+  width: 90%;
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  width: 262rpx;
+  height: 52rpx;
+  display: flex;
+}
+
+.title-item1 {
+  height: 100%;
+  width: 20rpx;
+  background-color: red;
+}
+
+.title-item2 {
+  height: 100%;
+  width: 200rpx;
+  background-color: #ded7de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-item2-text {
+  text-align: center;
+  font-family: "微软雅黑";
+}
+
+.title-item3 {
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 26rpx;
+  border-color: transparent transparent #ded7de #ded7de;
+}
+
+.content {
+  width: 100%;
+  margin-top: 30rpx;
+}
+
+.content-text {
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  width: 100%;
+  display: block;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.footer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  background-color: #aaa;
+}
+
+.footer-item1 {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-item2 {
+  border-left: 4rpx solid #bbb;
+  width: 50%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.btn1 {
+  width: 240rpx;
+  height: 70rpx;
+  font-size: 32rpx;
+  font-family: "微软雅黑";
+  background-color: #ffa600;
+  border-radius: 15rpx;
+  color: white;
+  text-align: center;
+  line-height: 70rpx;
+  margin-right: 15rpx;
+  display: flex;
+}
+
+.btn2 {
+  width: 280rpx;
+  height: 70rpx;
+  font-size: 32rpx;
+  font-family: "微软雅黑";
+  background-color: #7cb342;
+  border-radius: 15rpx;
+  color: white;
+  text-align: center;
+  line-height: 70rpx;
+  margin-left: 15rpx;
+  display: flex;
+}
+
+.recommend-title {
+  width: 100%;
+  height: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+
+.recommend-title-text {
+  font-size: 40rpx;
+  line-height: 0rpx;
+  color: #888;
+  font-family: "楷体";
+}
+.line{
+  width: 200rpx;
+  height: 4rpx;
+  border-bottom:4rpx solid #888;
+
+}
+.exception{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.extra-image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.extra-text{
+  margin-left:20rpx; 
+  font-family: "微软雅黑";
+  font-size: 40rpx;
+}

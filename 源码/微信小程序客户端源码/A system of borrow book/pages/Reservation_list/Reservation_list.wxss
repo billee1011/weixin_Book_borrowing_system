@@ -1,0 +1,68 @@
+/* pages/Reservation_list/Reservation_list.wxss */
+.section{
+width: 700rpx;
+margin: 10rpx 25rpx 60rpx;
+height: 320rpx;
+position: relative;
+}
+.s-fl{
+    float: left;
+    width: 300rpx; height: 300rpx;
+}
+image{ 
+    width: 240rpx; height: 240rpx;  margin-right: 10rpx;
+}
+.section text:first-child{
+   color: #101010;
+   height: 90rpx;
+}
+.section text{
+    display: block;
+    margin-bottom: 10rpx;
+    /*font-family:"微软雅黑";*/
+    font:28rpx "微软雅黑";
+    color: #888888;
+}
+.goBorrow{
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 28rpx;  
+    color: #ff0048;
+    border:1px solid ;
+    outline: none;
+    float: left;
+    display: flex;
+}
+.cancelBtn{
+   width: 180rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 28rpx;  
+    color: gray;
+}
+.icon-iconfontzhizuobiaozhun47::before{
+  content: "\e62e";
+  font-size: 35rpx;
+}
+.tips{
+  text-align: center;
+  margin-top: 100rpx;
+  font-size: 28rpx;
+  opacity: 0.5;
+}
+
+ 
+/*toast*/  
+.toast_content_box {  
+  width: 80%; 
+  text-align: center;
+  z-index: 999; 
+  color: white;
+  padding: 30rpx 0;
+  font-size: 28rpx;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15rpx;
+  position: fixed;
+  left: 10%;
+  top: 200rpx;
+}  

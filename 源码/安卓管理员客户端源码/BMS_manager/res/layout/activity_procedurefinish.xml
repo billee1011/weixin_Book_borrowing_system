@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background2">
+    <RelativeLayout 
+        android:layout_width="190dp"
+        android:layout_height="158dp"
+         android:layout_gravity="center_horizontal"
+        >
+        <ImageView 
+            android:src="@drawable/success"
+            android:layout_width="50dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            
+            />
+       <TextView 
+           android:id="@+id/tv_hint"
+           android:text="借书操作成功！"
+           android:layout_width="wrap_content"
+           android:layout_height="56dp"
+           android:textColor="#fd851b"
+           android:textSize="20sp"
+           android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+              android:gravity="center_vertical"
+           />
+        
+    </RelativeLayout>
+      <RelativeLayout 
+          android:layout_width="match_parent"
+android:layout_height="match_parent"
+          
+          >
+          
+          <Button 
+              android:id="@+id/btn_returnHome"
+              android:layout_width="192dp"
+              android:layout_height="40dp"
+              android:text="返回操作界面"
+              android:layout_centerInParent="true"
+               android:background="@drawable/btn_selector"
+               android:textColor="@drawable/btn_textcolor"
+              
+              />
+          
+          
+      </RelativeLayout>
+
+</LinearLayout>

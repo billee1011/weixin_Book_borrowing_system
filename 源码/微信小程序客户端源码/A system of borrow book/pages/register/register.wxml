@@ -1,0 +1,68 @@
+<form bindsubmit="formSubmit">
+  <view class="container">
+    <view class="item1">
+      <text class="text1">手机号</text>
+      <input class="input1 input" bindblur="phonelur" bindinput="inputphone" focus="{{Y}}" bindfocus="phonefocus"/>
+    </view>
+    <view class="item3" wx:if="{{show1}}">
+      <icon type="cancel" size="16"/>
+      <view class="hinttext">
+        {{hinttext}}
+      </view>
+    </view>
+    <view class="item4" wx:else>
+    </view>
+    <view class="item2">
+      <text class="text1">验证码</text>
+      <input class="input2 input" bindblur="codelur" bindinput="inputcode" bindfocus="codefocus"/>
+      <button class="btn1" bindtap="obtaincode" disabled="{{flag}}">{{btntext}}</button>
+    </view>
+    <view class="item3" wx:if="{{show2}}">
+      <icon type="cancel"  size="16"/>
+      <view class="hinttext">
+        {{hinttext1}}
+      </view>
+    </view>
+    <view class="item4" wx:else>
+    </view>
+    <view class="item2">
+      <text class="text2">身份证号</text>
+      <input class="input1 input" bindblur="idlur" bindinput="inputid" bindfocus="idfocus"/>
+    </view>
+    <view class="item3" wx:if="{{show3}}">
+      <icon type="cancel"  size="16"/>
+      <view class="hinttext">
+        {{hinttext2}}
+      </view>
+    </view>
+    <view class="item4" wx:else>
+    </view>
+    <view class="item2">
+      <text class="text2">真实姓名</text>
+      <input class="input3 input" bindblur="namelur" bindinput="inputname" bindfocus="namefocus"/>
+    </view>
+    <view class="item3" wx:if="{{show4}}">
+      <icon type="cancel"  size="16"/>
+      <view class="hinttext">
+        {{hinttext3}}
+      </view>
+    </view>
+    <view class="item4" wx:else>
+    </view>
+    <view class="item2">
+      <text class="text2">设置密码</text>
+      <input class="input1 input" bindblur="pwdlur" bindinput="inputpwd" password="true"/>
+    </view>
+    <view class="item3" wx:if="{{show5}}">
+      <icon type="cancel"  size="16" />
+      <view class="hinttext">
+        {{hinttext4}}
+      </view>
+    </view>
+    <view class="item4" wx:else>
+    </view>
+    <view class="item2">
+      <button class="btn2" form-type="submit">注 册</button>
+    </view>
+  </view>
+</form>

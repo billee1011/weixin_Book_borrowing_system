@@ -1,0 +1,69 @@
+<!--pages/booksimple/booksimple.wxml-->
+<view class="container-view" wx:if="{{flag}}">
+  <view class="item-book">
+    <image src="https://www.kyssky.party:8443/weixin/{{book.bookurl}}" class="item-book-image"></image>
+    <view class="item-book-view">
+      <text class="text-bookname">{{book.bookname}}</text>
+      <text class="text-author">{{book.author}}</text>
+      <text class="text-cn">藏书量：{{book.collectionnumber}}</text>
+      <text class="text-cn">可借复本：{{book.counterpart}}</text>
+    </view>
+  </view>
+  <view class="booktable">
+    <view class="booktable-item">
+      <text class="booktable-item-text1">书名</text>
+      <text class="booktable-item-text2">{{book.bookname}}</text>
+    </view>
+    <view class="booktable-item extra">
+      <text class="booktable-item-text1">出版社</text>
+      <text class="booktable-item-text2">{{book. press}}</text>
+    </view>
+    <view class="booktable-item extra">
+      <text class="booktable-item-text1">编号</text>
+      <text class="booktable-item-text2">{{book.isbn}}{{id}}</text>
+    </view>
+    <view class="booktable-item extra">
+      <text class="booktable-item-text1">索书号</text>
+      <text class="booktable-item-text2">{{book.callnumber}}</text>
+    </view>
+    <view class="booktable-item extra">
+      <text class="booktable-item-text1">藏书地</text>
+      <text class="booktable-item-text2">{{book.collectionplace}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="footer" wx:if="{{s=='B'}}">
+  <view class="footer-item1" bindtap="cancel" data-id="{{id}}" data-isbn="{{isbn}}">
+    <button class="btn1"> 取消预定
+      <text class="iconfont icon-star-outline"></text>
+    </button>
+
+  </view>
+
+  <view class="footer-item2" bindtap="goBorrow">
+    <button class="btn2">加入借书栏
+      <text class="iconfont icon-duihao"></text>
+    </button>
+  </view>
+</view>
+
+<view class="footer" wx:elif="{{s =='C'}}">
+  <button bindtap="cancelFromBorrow" size="mini" class="cancel2" hover-class="oncancel2">从借书栏中移除</button>
+</view>
+
+
+<view class="footer" wx:elif="{{ s =='A'}}">
+  <view class="footer-item1" bindtap="goReservation">
+    <button class="btn1 ">
+      我要预定
+      <text class="iconfont icon-star-outline"></text>
+    </button>
+  </view>
+
+  <view class="footer-item2" bindtap="goBorrow">
+    <button class="btn2">加入借书栏
+      <text class="iconfont icon-duihao"></text>
+    </button>
+  </view>
+</view>

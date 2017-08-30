@@ -1,0 +1,164 @@
+/* searchlist.wxss */
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header{
+  height: 9.2%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:#7cb342;
+  border-top:4rpx solid #fff;
+  position: relative;
+}
+.header-view{
+width: 90rpx;
+height: 90rpx;
+display: flex;
+ justify-content: center;
+}
+.header-input{
+  height: 60rpx;
+  width: 480rpx;
+  border: 2rpx solid #fff;
+  border-radius:10rpx;
+  color: #fff;
+  padding-left: 20rpx;
+  font-size: 28rpx;
+}
+.input-placeholder{
+  font-size: 28rpx;
+  font-family: "微软雅黑";
+  color: #fff;
+}
+.iconfont{
+  font-family: 'iconfont';
+  font-size: 70rpx;
+color:#fff;
+text-align:center;
+line-height:90rpx;
+}
+.icon-saoyisao:before{
+content:"\e610";
+}
+.icon-fangdajing:before{
+content:"\e605";
+}
+.input-placeholder{
+  font-size: 28rpx;
+  font-family: "微软雅黑";
+ color: #fff;
+}
+.item-book{
+  width: 630rpx;
+  height:300rpx;
+  border-bottom: 4rpx solid #999999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.item-book-image{
+  width: 180rpx;
+  height: 240rpx;
+  
+}
+.scroll{
+  width: 100%;
+  height:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-book-view{
+  width: 240rpx;
+  height: 240rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-bookname{
+  font-size: 35rpx;
+  font-family: "微软雅黑";
+  color: #101010;
+  
+}
+.text-author{
+font-size: 30rpx;
+  font-family: "微软雅黑";
+  color: #888888;
+}
+.text-press{
+font-size: 30rpx;
+  font-family: "微软雅黑";
+  color: #888888;
+}
+.text-cn{
+font-size: 28rpx;
+  font-family: "微软雅黑";
+  color: #101010;
+}
+.search-tip{
+  position: absolute;
+  width: 500rpx;
+  /*border:2rpx solid #cccccc;*/
+  z-index: 100;
+  background: rgb(255, 255, 255);
+  top: 100%;
+  left: 125rpx;
+  border-top: none;
+  border-bottom: none;
+}
+.search-item{
+  padding: 20rpx 20rpx;
+  border-bottom: 1px solid rgb(220, 220, 220); 
+}
+.search-item text{
+  display: block;
+  font-size: 28rpx; color: gray;
+  width: 460rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 38rpx;
+  line-height: 38rpx;
+}
+.footer{
+  width:100%;
+  height:80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbbbbb;
+}
+.footer-image{
+  width: 64rpx;
+  height: 64rpx;
+}
+.extra{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.extra-image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.extra-text{
+  margin-left:20rpx; 
+  font-family: "微软雅黑";
+  font-size: 40rpx;
+}
+.scroll_extra{
+ width: 100%;
+  height:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

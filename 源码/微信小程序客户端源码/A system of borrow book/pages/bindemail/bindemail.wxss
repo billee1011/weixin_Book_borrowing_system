@@ -1,0 +1,42 @@
+/* bindemail.wxss */
+.container{
+   width: 100%;
+   height: 100%;
+ display:  flex;
+  flex-direction: column;
+   align-items: center;
+
+}
+.container-text{
+   font-family: "微软雅黑";
+   font-size: 36rpx;
+   
+}
+
+.container-input{
+    margin-left: 5rpx;
+     width: 350rpx;
+     height: 60rpx;
+     border: 2rpx solid #888888;
+     border-radius: 10rpx;
+     padding-left: 10rpx;
+}
+.container-btn{
+  width:180rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  padding:0;
+  background-color: #7cb342;
+  color: #fff;
+  font-size: 30rpx;
+}
+.item{
+  width: 90%;
+  height: 200rpx;
+  display:  flex;
+  justify-content: space-around;
+ margin-top: 0rpx;
+ align-items: center;
+}
+

@@ -1,0 +1,40 @@
+<!--setpwd.wxml-->
+<form bindsubmit="formSubmit">
+  <view class="container">
+    <view class="item1">
+      <text class="item1-text">新密码</text>
+      <input class="item1-input" placeholder='设置新密码' bindblur="setpwdlur" bindinput="setpwdinput" focus="true"  password />
+    </view>
+    <view class="item2">
+      <view class="item2-1" wx:if="{{show1}}">
+        <icon type="cancel" />
+        <view class="item2-1-hinttext">
+          {{hinttext1}}
+        </view>
+      </view>
+      <view class="item2-2" wx:else></view>
+    </view>
+    <view class="item3">
+      <text class="item3-text">确认密码</text>
+      <input placeholder='确认密码' class="item3-input" bindblur="confirmpwdlur" bindinput="confirmpwdinput"   password />
+    </view>
+    <view class="item4">
+      <view class="item4-1" wx:if="{{show2}}">
+        <icon type="cancel" />
+        <view class="item4-1-hinttext">
+          {{hinttext2}}
+        </view>
+      </view>
+      <view class="item4-2" wx:else></view>
+    </view>
+    <button class="btn" form-type="submit">确 定</button>
+
+
+
+
+
+
+
+
+  </view>
+</form>

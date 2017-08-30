@@ -1,0 +1,56 @@
+<!--my.wxml-->
+<view class="container" wx:if="{{flag}}">
+
+  <view class="header">
+    <image class="header-image" src="../../images/user.png"></image>
+    <view class="header-text">
+
+      <text class="header-text-1">{{username}}</text>
+      <text class="header-text-2">{{zhanghao}}{{phone}}</text>
+
+    </view>
+  </view>
+  <image src="../../images/my_image.png" class="middle-image"></image>
+
+  <view class="middle-function">
+    <view class="middle-function-1" bindtap="borrowHistory">
+      <text class="iconfont icon-jieyuejilu"></text>
+      <text class="function-text">借阅历史</text>
+      <text> > </text>
+    </view>
+
+    <view class="middle-function-1" bindtap="libraryColumn">
+      <text class="iconfont icon-shujiadianji"></text>
+      <text class="function-text" style="left:-130rpx">我的借书栏</text>
+      <text> > </text>
+    </view>
+
+    <view class="middle-function-1" bindtap="returnBook">
+      <text class="iconfont icon-rili"></text>
+      <text class="function-text">我要还书</text>
+      <text> > </text>
+    </view>
+
+    <view class="middle-function-1" bindtap="reserveBook">
+      <text class="iconfont icon-yuding"></text>
+      <text class="function-text">我的预定</text>
+      <text> > </text>
+    </view>
+    
+  </view>
+  <view class="middle-set" bindtap="setfunction">
+    <view class="middle-set-1">
+      <text class="iconfont icon-shezhi"></text>
+      <text class="function-text" style="left:-200rpx">设置</text>
+      <!--<text class="iconfont icon-dayuhao"></text>-->
+      <text> > </text>
+    </view>
+  </view>
+  <view class="footer">
+    <button bindtap="exit">{{exit}}</button>
+  </view>
+</view>
+<view class="extra" wx:else bindtap="loading">
+  <image src="../../images/nofound.png" class="extra-image"></image>
+  <view class="extra-text">页面找不到了。。。</view>
+</view>

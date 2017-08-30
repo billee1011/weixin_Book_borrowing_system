@@ -1,0 +1,40 @@
+<!--pages/pay/pay.wxml-->
+
+<view class="logo">
+
+  <image src="../../images/logo1.png"></image>
+</view>
+<view class="title">
+  <text>百书馆</text>
+
+</view>
+
+<view class="table">
+  <block  wx:for="{{infoArr}}" wx:key="index" >
+    <view class="table-header">
+      <text>编号:{{item}}</text>
+    </view>
+
+  </block>
+  <view class="table-footer">
+    <text>手机号:{{phonenumber}}</text>
+    <text>需支付:10元</text>
+  </view>
+</view>
+<view class="footer" >
+<view style="display:{{display2}}" >
+
+<view >
+<icon type="success" size="28" />
+</view>
+<view >
+<text >已支付 </text> 
+
+</view>
+
+</view>
+
+  <button bindtap="confirm" style="display:{{display}}"  disabled="{{disabled}}" >
+  <text  style="display:{{delay}}" >  {{sec}}s {{txt}} </text>
+ </button>
+</view>

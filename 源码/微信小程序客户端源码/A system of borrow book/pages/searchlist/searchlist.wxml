@@ -1,0 +1,42 @@
+<!--searchlist.wxml-->
+<view class="container" wx:if="{{onload1}}">
+  <view class="header">
+    <view class="header-view" bindtap="scan">
+      <text class="iconfont icon-saoyisao"></text>
+    </view>
+    <input placeholder="请输入书名和编号" class="header-input" placeholder-class="input-placeholder" bindinput="iptBook" bindblur="search_blur" bindfocus="search_focus" value="{{search_content}}" />
+    <view class="header-view" bindtap="find">
+      <text class="iconfont icon-fangdajing"></text>
+    </view>
+    <view class="search-tip" style="display:{{search_display}}">
+      <block wx:for="{{bookNameList}}" wx:key="index">
+        <view class="search-item" id="{{item}}" bindtap="addSearCon">
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <scroll-view class="scroll" scroll-y="true" bindscrolltolower="scrolltolower" lower-threshold="50" wx:if="{{onload3}}">
+    <block wx:for="{{book}}" wx:key="index" >
+      <view class="item-book" bindtap="booktap" id="{{item.isbn}}">
+        <image src="https://www.kyssky.party:8443/weixin/{{item.bookurl}}" class="item-book-image"></image>
+        <view class="item-book-view">
+          <text class="text-bookname">{{item.bookname}}</text>
+          <text class="text-author">{{item.author}}</text>
+          <text class="text-press">{{item.press}}</text>
+          <text class="text-cn">可借复本：{{item.counterpart}}</text>
+        </view>
+      </view>
+    </block>
+    <view class="footer" wx:if="{{footer_condition}}">
+      <image src="{{footer_img}}" class="footer-image" />
+      <text>{{footer_text}}</text>
+    </view>
+  </scroll-view>
+<view class="scroll_extra" wx:else>很抱歉，您要的资源小店暂时没有。。。</view>
+
+</view>
+<view class="extra" wx:if="{{onload2}}" bindtap="loading">
+  <image src="../../images/nofound.png" class="extra-image"></image>
+  <view class="extra-text">页面找不到了。。。</view>
+</view>

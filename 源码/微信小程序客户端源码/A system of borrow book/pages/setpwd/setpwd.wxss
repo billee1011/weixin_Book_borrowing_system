@@ -1,0 +1,62 @@
+/* setpwd.wxss */
+.container{
+  height: 480rpx;
+  width:100%;
+}
+.item1{
+  margin-top: 46rpx;
+height: 98rpx;
+width: 100%;
+display: flex;
+align-items: center;
+}
+.item3{
+height: 98rpx;
+width: 100%;
+display: flex;
+align-items: center;
+}
+.item1-text{
+  font-size:32rpx;
+  font-family: '微软雅黑';
+margin-left: 90rpx;
+
+}
+.item1-input,.item3-input{
+  width: 470rpx;
+  height: 90rpx;
+  border: 4rpx solid #888888;
+  margin-left: 20rpx;
+}
+.item3-text{
+   font-size:32rpx;
+  font-family: '微软雅黑';
+margin-left: 52rpx;
+
+}
+.btn{
+  width: 644rpx;
+  height: 90rpx;
+  background-color: #7cb342;
+  color: white;
+}
+.item2-1-hinttext,.item4-1-hinttext{
+    font-size: 28rpx;
+    color: red;
+}
+.item2-1,.item4-1{
+    display: flex;
+    align-items: center;
+    margin-left: 224rpx;
+}
+.item2,.item2-2,.item4,.item4-2{
+  height: 46rpx;
+  width: 100%;
+}
+input{
+  border-radius: 10rpx;
+  padding-left: 10rpx;
+}
+button{
+  line-height: 90rpx;
+}

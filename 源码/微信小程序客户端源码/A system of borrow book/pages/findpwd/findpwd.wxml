@@ -1,0 +1,16 @@
+<form bindsubmit="formSubmit">
+<view class="container">
+<view class="item1">
+<text class="item1-text">手机号</text>
+<input  bindinput="phoneinput" class="item1-input {{flag==true ? 'on' : ''}}"/>
+</view>
+<view class="item2">
+<text class="item2-text">验证码</text>
+<input  class="item2-input {{flag1==true ? 'on' : ''}}" bindinput="codeinput"/>
+<button class="item2-btn" bindtap="getcode" disabled="{{flag3}}"> {{btntext}}</button>
+</view>
+<view class="item3">
+<button class="item3-btn" form-type="submit">设置新密码</button>
+</view>
+</view>
+</form>

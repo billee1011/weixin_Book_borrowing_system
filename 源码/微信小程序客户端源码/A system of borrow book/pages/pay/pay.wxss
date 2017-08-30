@@ -1,0 +1,40 @@
+/* pages/pay/pay.wxss */
+
+.logo{
+  text-align: center;
+  margin-top: 100rpx;
+}
+.title{
+  text-align: center;
+}
+image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.table-header,.item{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40rpx;
+}
+
+
+.table-footer{
+ margin-top: 400rpx;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer{
+  position: absolute;
+  bottom: 30rpx;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+}
+.footer button{
+  color: #ffffff;
+  background: #7cb342;
+  font-size: 32rpx;
+}

@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="clicktab">账号登录
+    </view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="clicktab">短信登录
+    </view>
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+    <swiper-item>
+      <form bindsubmit="forSubmit">
+        <view class="viewform">
+          <input placeholder="手机号" class="ipt {{flag==0 ? 'on1' : ''}}" bindinput="idinput" />
+          <input placeholder="密码" password="true" class="ipt {{flag1==0 ? 'on1' : ''}}" bindinput="pwdinput" />
+          <button form-type="submit" class="btnlogin">登录</button>
+        </view>
+      </form>
+      <view class="btnview">
+        <button class="btnview-item1" bindtap="findpwd">
+          忘记密码
+        </button>
+        <button class="btnview-item1 btnview-item2" bindtap="btnregister">
+          用户注册
+        </button>
+      </view>
+      <view class="viewbottom">
+        <text class="text1">———————还可以选择以下方式登录———————</text>
+        <image src="{{src}}" bindtap="weixinlogin"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <form bindsubmit="forSubmit1">
+        <view class="viewform">
+          <input placeholder="输入手机号" class="ipt {{flag2==0 ? 'on1' : ''}}" bindinput="phoneinput" />
+          <view class="viewform-item">
+            <input placeholder="输入验证码" class="ipt1 {{flag3==0 ? 'on1': ''}}" bindinput="codeinput" />
+            <button class="b1" bindtap="getcode" disabled="{{flag4}}">{{btntext}}</button>
+          </view>
+          <button form-type="submit" class="btnlogin">登录</button>
+        </view>
+      </form>
+    </swiper-item>
+  </swiper>
+</view>
+<actionsheet itemList="['s','s1']" />

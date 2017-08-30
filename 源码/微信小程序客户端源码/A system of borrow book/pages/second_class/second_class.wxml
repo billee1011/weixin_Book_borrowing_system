@@ -1,0 +1,34 @@
+<!--pages/second_class/second_class.wxml-->
+<!--<text>二级分类</text>-->
+
+<view class="navis" hover-class="on"  >
+  <block wx:for="{{navisTxt}}" wx:key="index">
+    <text  bindtap="changeHeader" data-header="{{item}}" >{{item}}</text>
+  </block>
+</view>
+
+<view class="section">
+  <view class="header">
+    <text> {{header}}</text>
+  </view>
+  <scroll-view style="width:665rpx; height:900rpx;  margin:0 auto; " scroll-y bindscrolltoupper="pullDownRefresh" bindscrolltolower="pullUpLoad" scroll-top="{{scrollTop}}" >
+
+    <block wx:for="{{books}}" wx:key="index">
+      <!--<navigator url="../bookinfo/bookinfo?isbn={{item.isbn}}" hover-class="none">-->
+        <!--传递图书id-->
+        <view class="section-item" bindtap="goBookInfo" data-isbn="{{item.isbn}}"  hover-class="navigator-hover"  >
+          <image src="https://www.kyssky.party:8443/weixin/{{item.bookurl}}"></image>
+          
+          <text class="bookName" >{{item.bookname}}</text>
+          <text>{{item.author}}</text>
+          <text>{{item.press}}</text>
+          <text>藏书量：{{item.collectionnumber}}
+          </text>
+          
+        </view>
+      <!--</navigator>-->
+    </block>
+
+    
+  </scroll-view>
+</view>

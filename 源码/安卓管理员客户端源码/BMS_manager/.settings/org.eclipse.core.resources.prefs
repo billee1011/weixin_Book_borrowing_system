@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/cn/sdut/bms_manager/scan/activity/CaptureActivity.java=UTF-8
+encoding//src/cn/sdut/bms_manager/scan/camera/CameraConfigurationManager.java=UTF-8
+encoding//src/cn/sdut/bms_manager/scan/decode/DecodeFormatManager.java=UTF-8
+encoding//src/cn/sdut/bms_manager/scan/decode/DecodeHandler.java=UTF-8

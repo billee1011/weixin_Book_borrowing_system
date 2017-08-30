@@ -1,0 +1,19 @@
+<!--loginbyweixinafter.wxml-->
+<view class="container">
+<view class="item1">
+<text class="item1-text1">您还没有绑定实名认证账号，是否立即注册绑定？\n</text>
+<text class="item1-text2">绑定手机号，可以预定图书、借阅图书</text>
+</view>
+<view class="item2">
+<button bindtap="gotoregister" class="btn1">去注册</button>
+</view>
+<view class="item3">
+<text class="item1-text1">已有实名账号？</text><button bindtap="gotobind" class="btn2 item1-text2">直接去绑定</button>
+</view>
+<view class="item3">
+<text class="item1-text1">换个账号登陆?</text><button bindtap="gotoaccountlogin" class="btn2 item1-text2">换个账号登陆</button>
+</view>
+<view class="item3" style="border:0">
+<text class="item1-text1">直接返回首页?</text><button bindtap="gotofirstpage" class="btn2 item1-text2">去首页</button>
+</view>
+</view>

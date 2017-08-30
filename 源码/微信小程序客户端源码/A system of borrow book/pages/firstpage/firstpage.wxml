@@ -1,0 +1,75 @@
+ <!--firstpage.wxml-->
+<view class="container" wx:if="{{onload2}}">
+<!--头部搜索框-->
+  <view class="header">
+    <view class="header-view" bindtap="scan">
+      <!--扫一扫-->
+      <text class="iconfont icon-saoyisao"></text>
+    </view>
+    <input placeholder="请输入书名和编号" class="header-input" placeholder-class="input-placeholder" bindinput="iptBook" bindblur="search_blur" bindfocus="search_focus" />
+    <view class="header-view" bindtap="find">
+      <text class="iconfont icon-fangdajing"></text>
+    </view>
+<!--搜索提示面板-->
+    <view class="search-tip" style="display:{{search_display}}">
+      <block wx:for="{{bookNameList}}" wx:key="index">
+        <view class="search-item" id="{{item}}" bindtap="addSearCon">
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <scroll-view class="container-scroll" scroll-y="true" bindscrolltolower="scrolltolower" lower-threshold="50">
+    <view class="container-scroll-item1">
+      <view class="container-scroll-item1-view">
+        <block wx:for="{{kind1}}" wx:key="id">
+          <view class="category" bindtap="kindtap" data-kindName="{{item.kind1_text}}" >
+            <image src="https://www.kyssky.party:8443/weixin/{{item.kind1_images}}" class="category-image"></image>
+            <text class="category-text">{{item.kind1_text}}</text>
+          </view>
+        </block>
+      </view>
+      <view class="container-scroll-item1-view">
+        <block wx:for="{{kind2}}" wx:key="id">
+          <view class="category" bindtap="kindtap"  data-kindName="{{item.kind2_text}}">
+            <image src="https://www.kyssky.party:8443/weixin/{{item.kind2_images}}" class="category-image"></image>
+            <text class="category-text">{{item.kind2_text}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <swiper class="container-scroll-item2" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-active-color="white">
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" mode="scaleToFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="container-scroll-item3">
+      <view class="container-scroll-item3-header">
+
+        <view class="item3-header-line"></view>
+        <text class="item3-header-text">经典之作 </text>
+        <view class="item3-header-line"></view>
+
+      </view>
+      <block wx:for="{{book}}" wx:key="isbn">
+        <view class="container-scroll-item3-book" bindtap="booktap" id="{{item.isbn}}">
+          <image src="https://www.kyssky.party:8443/weixin/{{item.bookurl}}" class="book-image"></image>
+          <text class="book-text1">{{item.bookname}}</text>
+          <text class="book-text2">{{item.author}}</text>
+        </view>
+      </block>
+      <view class="footer" wx:if="{{footer_condition}}">
+        <image src="{{footer_img}}" class="footer-image" />
+        <text>{{footer_text}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="extra" wx:if="{{onload3}}" bindtap="loading">
+  <image src="../../images/nofound.png" class="extra-image"></image>
+  <view class="extra-text">页面找不到了。。。</view>
+</view>
+<view class="container" wx:if="{{onload1}}"></view>

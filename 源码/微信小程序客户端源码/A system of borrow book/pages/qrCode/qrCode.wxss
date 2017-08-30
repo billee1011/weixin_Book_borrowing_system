@@ -1,0 +1,18 @@
+/* pages/qrCode/qrCode.wxss */
+page{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+#img{
+  width:360rpx;
+  height:360rpx;
+  margin-top: 200rpx;
+
+}
+.vi{
+  margin-top: 20rpx;
+  width: 70%;
+  height: 200rpx;
+  text-align: center;
+}

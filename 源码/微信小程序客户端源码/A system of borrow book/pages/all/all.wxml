@@ -1,0 +1,14 @@
+<!--pages/all/all.wxml-->
+<view class="box">
+<block wx:for="{{classes}}" wx:key="index" >
+    <view class="item" bindtap="goSecond" data-title="{{item.className}}">
+      <image src="{{Imgsrc}}{{item.classSrc}}" ></image>
+      <text >{{item.className}}</text>
+    </view>
+</block>
+</view>
+
+
+
+
+

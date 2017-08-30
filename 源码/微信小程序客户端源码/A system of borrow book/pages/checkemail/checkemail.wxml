@@ -1,0 +1,18 @@
+<!--checkemail.wxml-->
+<view class="container">
+
+<view class="item1">
+
+<text class="item1-text">您的邮箱是：{{email}}</text>
+
+
+</view>
+
+<view class="item2">
+
+<input placeholder="输入验证码" class="item2-input {{flag==true ? 'on' : ''}}" bindinput="inputcode"/>
+<button class="btn" bindtap="checkcode">确定</button>
+</view>
+
+
+</view>
